@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 21 dias</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <h1 class="titulo-cabeçalho">Desafio dos 21 dias</h1>
+        <p>Desafio de bem estar criado pela Laura, Lorenna, Ana Flávia, Larissa e Rayane cujo objetivo é emagrecer e manter boas práticas!!</p>
+        <p> Fazer virar rotina e ser leve</p>
+    </header>
+    
+    <main class="principal">
+
+        <h2 class="principal__titulo">REGRAS: </h2>
+
+        <ul class="lista">
+            <div class="lista__check">
+            <input type="checkbox" id="lista__checkbox__açucar">
+                <label for="lista__checkbox__açucar">
+                    <li class="lista__itens">1ª semana sem açúcar e dieta Detox.</li>
+                </label>
+            </div>
+
+            <div class="lista__check">
+                <input type="checkbox" id="lista__checkbox__agua">
+                    <label for="lista__checkbox__agua">
+                    <li class="lista__itens">Min 2L de água/chá por dia.</li>
+                </label>
+            </div>
+
+            <div class="lista__check">
+                <input type="checkbox" id="lista__checkbox__atv">
+                    <label for="lista__checkbox__atv">
+                    <li class="lista__itens">6 dias de atividades física na semana (pode ser em casa, caminhada, etc… o importante é fazer algo intencionalmente) </li>
+                </label>
+            </div>
+            
+            <div class="lista__check">
+                <input type="checkbox" id="lista__checkbox__detox">
+                    <label for="lista__checkbox__detox">
+                    <li class="lista__itens">Após o Detox temos 1 refeição livre por semana e açúcar de forma CONSCIENTE.</li>
+                    </label>
+            </div>
+        </ul>
+
+        <h3 class="titulo__meio">Participantes</h3>
+        <table class="tabela">
+            <thead>
+                <tr class="pessoa">
+                    <th>Nome</th>
+                    <th>Peso Inicial</th>
+                    <th>Data em que pesou</th>
+                    <th>Meta</th>
+                 </tr>
+            </thead>
+
+            <tbody id="tabela-pessoas">
+                <tr class="pessoa" id="primeira-pessoa">
+                    <td class="info-nome">Lorenna</td>
+                    <td class="info-peso">83kg</td>
+                    <td class="info-data">08/01/2024</td>
+                    <td class="info-peso-final">79kg</td>
+    
+            </tr>
+
+                <tr class="pessoa">
+                    <td class="info-nome">Laura</td>
+                    <td class="info-peso">80kg</td>
+                    <td class="info-data">08/01/2024</td>
+                    <td class="info-peso-final">79kg</td>
+                
+                </tr>
+            </tbody>
+        </table>
+
+        <section class="formulario">
+                <h3 class="formulario__titulo">Insira os dados abaixo:</h3>
+            
+            <form id="form-adiciona">
+                <div class="formulario__estilo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name= "nome" id= "nome" placeholder="Digite aqui seu nome">
+                </div>
+
+                <div class="formulario__estilo">
+                    <label for="peso">Peso Inicial:</label>
+                    <input type="text" name= "peso" id= "peso" placeholder="Digite aqui seu peso">
+                </div>
+
+                <div class="formulario__estilo">
+                    <label for="data">Data em que pesou:</label>
+                    <input type="text" name= "data" id= "data" placeholder="Digite aqui a data inicial">
+                </div>
+
+                <div class="formulario__estilo">
+                    <label for="meta">Meta:</label>
+                    <input type="text" name= "meta" id= "meta" placeholder="Digite aqui sua meta">
+                </div> 
+
+                <button class="formulario__botao" id="adicionar-pessoa">Enviar</button>
+
+            </form>
+
+        </section>
+    </main>
+    <script src="principal.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --fonte-principal: "Montserrat";
+    --fundo-cabeçalho: #66CDAA;
+    --fundo:#F5FFFA;
+    --cor-botão:#7FFFD4;
+}
+
+.cabeçalho{
+    text-align: center;
+    background-color: var(--fundo-cabeçalho);
+    height: 6em;
+    padding-top: 2em;
+}
+
+.titulo-cabeçalho{
+    padding-bottom: 0.5em;
+}
+
+body{
+    background-color: var(--fundo);
+}
+
+.principal{
+    text-align: center;
+}
+
+.principal__titulo{
+    padding: 3em 0 0.5em;
+}
+
+.lista{
+    padding: 0 0 1em 0;
+    
+}
+.lista__itens{
+    padding-bottom: 0.5em;
+}
+.lista__check{
+    display: flex;
+    justify-content: center;
+}
+.lista__check__caixa{
+    text-decoration: none;
+}
+.titulo__meio{
+    padding: 3em;
+}
+.tabela, th, td{
+    border: 0.08em solid black;
+    border-collapse: collapse;
+    padding: 1em;
+    text-align: center;
+    margin-left: 18em;
+    margin-bottom: 5em;
+    padding: 1em;
+    width: 900px;
+}
+.formulario__estilo{
+    margin: 1em;
+}
+.formulario{
+    text-align: left;
+    margin: 10em 0 0 2em;
+}
+.formulario__titulo{
+    margin: 0 0 1.5em 0.8em;
+}
+.formulario__botao{
+    margin: 0.5em  0 0 8em;
+    border-radius: 50px;
+    padding: 1em;
+    background-color: var(--cor-botão);
+}
